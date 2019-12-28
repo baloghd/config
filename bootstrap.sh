@@ -3,7 +3,8 @@ sudo apt update
 # anaconda
 
 # https://repo.anaconda.com/archive/ innen scrapelni a legfelső Linux-x86_64.sh-t
-
+conda init
+pip install jupyter 
 
 # brave 
 sudo apt install apt-transport-https curl
@@ -13,13 +14,23 @@ sudo apt update
 sudo apt install brave-browser
 
 # utilities
-sudo apt install vim-gtk keepassxc transmission ssh
+sudo apt install vim-gtk keepassxc transmission ssh mpv
 snap install code --classic
+
+#docker
 snap install docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
 
 # git setup
 
 git config --global user.email "balogh.domonkos@gmail.com"
 git config --global user.name "baloghd"
 git config --global credential.helper store
+
+
+# youtube-dl
+sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
+
+sudo chmod a+rx /usr/local/bin/youtube-dl
 
