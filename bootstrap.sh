@@ -14,7 +14,9 @@ sudo apt update
 sudo apt install brave-browser
 
 # utilities
-sudo apt install vim-gtk keepassxc transmission ssh mpv
+sudo apt install keepassxc transmission ssh mpv
+sudo apt install build-essential
+
 snap install code --classic
 
 #docker
@@ -31,6 +33,17 @@ git config --global credential.helper store
 
 # youtube-dl
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-
 sudo chmod a+rx /usr/local/bin/youtube-dl
+
+# bash shortcuts
+
+## git
+echo 'alias gicl="git clone"' >> ~/.bashrc
+echo 'alias gis="git status"' >> ~/.bashrc
+echo 'alias gic="git commit' >> ~/.bashrc
+echo 'alias gip="git push"' >> ~/.bashrc
+
+## pip
+echo 'alias pii="pip install"' >> ~/.bashrc
+echo 'alias ' >> ~/.bashrc
 
